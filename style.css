@@ -671,3 +671,126 @@ h2,
     text-align: center;
   }
 } 
+
+/* Lightbox-Pfeile Desktop */
+@media (min-width: 768px) {
+  .lightbox {
+    position: fixed;
+    /* ...evtl. vorhandene Eigenschaften... */
+  }
+  .lightbox img {
+    display: block;
+    margin: 0 auto;
+    max-width: 90vw;
+    max-height: 80vh;
+    position: relative;
+    z-index: 1;
+  }
+  .lightbox-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2.2rem;
+    color: #fff;
+    background: rgba(30,30,30,0.7);
+    border: none;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    opacity: 0.92;
+  }
+  .lightbox-arrow:hover {
+    background: rgba(30,30,30,0.95);
+    color: #ff5252;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.35);
+  }
+  .lightbox-arrow-left {
+    left: 50%;
+    transform: translate(-180%, -50%); /* Links am Bild, etwas Abstand */
+  }
+  .lightbox-arrow-right {
+    right: 50%;
+    transform: translate(180%, -50%); /* Rechts am Bild, etwas Abstand */
+  }
+}
+
+@media (max-width: 767px) {
+  .lightbox-arrow {
+    display: none;
+  }
+} 
+
+/* Lightbox-Bar unter dem Bild */
+.lightbox-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin: 18px auto 0 auto;
+  padding: 8px 0 0 0;
+  width: 100%;
+  max-width: 90vw;
+  font-size: 1.1rem;
+  background: none;
+  z-index: 10;
+}
+.lightbox-bar-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  font-size: 2rem;
+  color: #fff;
+  background: rgba(30,30,30,0.7);
+  border-radius: 50%;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  opacity: 0.92;
+  border: none;
+  cursor: pointer;
+}
+.lightbox-bar-arrow:hover {
+  background: rgba(30,30,30,0.95);
+  color: #ff5252;
+}
+.lightbox-bar-info {
+  color: #fff;
+  font-size: 1.08rem;
+  letter-spacing: 0.02em;
+  background: rgba(30,30,30,0.55);
+  border-radius: 8px;
+  padding: 4px 16px;
+  min-width: 90px;
+  text-align: center;
+} 
+.lightbox-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 90vw;
+  margin: 0 auto;
+}
+.lightbox-inner img {
+  display: block;
+  max-width: 90vw;
+  max-height: 80vh;
+  margin: 0 auto;
+  border-radius: 6px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+}
+.lightbox-bar {
+  width: 100%;
+  max-width: 600px;
+  margin: 18px auto 0 auto;
+} 
