@@ -650,3 +650,24 @@ h2,
     padding: 1.2rem 0.8rem;
   }
 } 
+
+/* Footer mobile zentriert */
+@media (max-width: 600px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-info, .footer-nav {
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .footer-nav a {
+    display: inline-block;
+    margin: 0 8px;
+  }
+  .footer-bottom {
+    text-align: center;
+  }
+} 

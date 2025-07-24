@@ -9,6 +9,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="geruestbau-rynkiewicz-favicon.png">
+  <!-- AOS Animate On Scroll CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
 </head>
 <body>
   <nav class="navbar">
@@ -38,7 +40,7 @@
     </div>
   </header>
   <main>
-    <section class="intro" id="ueber-uns">
+    <section class="intro" id="ueber-uns" data-aos="fade-up" data-aos-duration="1000">
       <div class="intro-text">
         <h2>Über uns</h2>
         <p>Seit über 20 Jahren im Gerüstbau tätig.</p>
@@ -48,7 +50,7 @@
         <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Bauprojekt Gerüstbau">
       </div>
     </section>
-    <section class="leistungen" id="leistungen">
+    <section class="leistungen" id="leistungen" data-aos="fade-up" data-aos-duration="1000">
       <h2>Unsere Leistungen</h2>
       <div class="leistungen-cards">
         <div class="leistung-card">
@@ -68,7 +70,7 @@
         </div>
       </div>
     </section>
-    <section class="referenzen" id="referenzen">
+    <section class="referenzen" id="referenzen" data-aos="fade-up" data-aos-duration="1000">
       <h2>Referenzen</h2>
       <div class="gallery-grid">
         <a href="#img1"><img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Referenz 1"></a>
@@ -104,7 +106,7 @@
         <img src="https://images.unsplash.com/photo-1465101178521-c1a9136a3c8b?auto=format&fit=crop&w=1200&q=80" alt="Referenz 6 groß">
       </div>
     </section>
-    <section class="kontakt" id="kontakt">
+    <section class="kontakt" id="kontakt" data-aos="fade-up" data-aos-duration="1000">
       <h2>Kontakt</h2>
       <form class="kontakt-form" autocomplete="off">
         <label for="name">Name*</label>
@@ -147,6 +149,14 @@
   <!-- Dummy-Abschnitte für Impressum & Datenschutz -->
   <section id="impressum" style="display:none;"></section>
   <section id="datenschutz" style="display:none;"></section>
+  <!-- AOS Animate On Scroll JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      offset: 80
+    });
+  </script>
   <!-- Lenis Smooth Scroll -->
   <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.18/bundled/lenis.min.js"></script>
   <script>
