@@ -6,11 +6,13 @@
   <title>Gerüstbau Rynkiewicz – Ihr Partner für sicheren Gerüstbau</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="geruestbau-rynkiewicz-favicon.png">
   <!-- AOS Animate On Scroll CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <!-- Font Awesome für moderne Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
   <nav class="navbar">
@@ -40,93 +42,730 @@
     </div>
   </header>
   <main>
-    <section class="intro" id="ueber-uns" data-aos="fade-up" data-aos-duration="1000">
-      <div class="intro-text">
+    <!-- Modernisierte Über uns Sektion -->
+    <section class="intro" id="ueber-uns">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up" data-aos-duration="800">
         <h2>Über uns</h2>
-        <p>Seit über 20 Jahren im Gerüstbau tätig.</p>
-        <p>Zuverlässigkeit, Qualität und Sicherheit stehen bei uns an erster Stelle.</p>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">Ihr vertrauensvoller Partner im Gerüstbau</p>
+        </div>
+        
+        <div class="intro-content">
+          <div class="intro-text" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-award"></i>
+              </div>
+              <h3>Über 20 Jahre Erfahrung</h3>
+              <p>Seit mehr als zwei Jahrzehnten sind wir Ihr zuverlässiger Partner für alle Gerüstbau-Projekte. Unsere langjährige Erfahrung garantiert höchste Qualität und Sicherheit.</p>
+            </div>
+            
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <h3>Sicherheit an erster Stelle</h3>
+              <p>Bei uns steht die Sicherheit aller Beteiligten an oberster Stelle. Wir arbeiten ausschließlich nach den höchsten Sicherheitsstandards und Vorschriften.</p>
+            </div>
+            
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-handshake"></i>
+              </div>
+              <h3>Zuverlässigkeit & Qualität</h3>
+              <p>Wir liefern pünktlich, zuverlässig und in bester Qualität. Ihr Projekt ist uns wichtig - von der ersten Planung bis zur finalen Abnahme.</p>
+            </div>
+          </div>
+          
+          <div class="intro-visual" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
+            <div class="image-stack">
+              <div class="image-card primary">
+                <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Gerüstbau Projekt">
+              </div>
+              <div class="image-card secondary">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Professioneller Gerüstbau">
+              </div>
+              <div class="image-card tertiary">
+                <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80" alt="Sicherer Gerüstbau">
+              </div>
+            </div>
+          </div>
       </div>
-      <div class="intro-img">
-        <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Bauprojekt Gerüstbau">
       </div>
     </section>
-    <section class="leistungen" id="leistungen" data-aos="fade-up" data-aos-duration="1000">
+
+    <!-- Modernisierte Leistungen Sektion -->
+    <section class="leistungen" id="leistungen">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up" data-aos-duration="800">
       <h2>Unsere Leistungen</h2>
-      <div class="leistungen-cards">
-        <div class="leistung-card">
-          <div class="leistung-icon">🏢</div>
-          <h3>Fassadengerüste</h3>
-          <p>Sicher und flexibel anpassbar</p>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">Wählen Sie das passende Paket für Ihr Projekt</p>
         </div>
-        <div class="leistung-card">
-          <div class="leistung-icon">🚧</div>
-          <h3>Fahrgerüste</h3>
-          <p>Mobil und vielseitig einsetzbar</p>
+        
+        <div class="pricing-container" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+          <div class="pricing-grid">
+            <!-- Basic Tarif -->
+            <div class="pricing-card basic" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+              <div class="pricing-header">
+                <div class="pricing-icon">
+                  <i class="fas fa-home"></i>
+                </div>
+                <h3>Basic</h3>
+                <div class="pricing-price">
+                  <span class="currency">€</span>
+                  <span class="amount">299</span>
+                  <span class="period">/Tag</span>
+                </div>
+                <p class="pricing-description">Perfekt für kleinere Projekte und private Aufträge</p>
+              </div>
+              
+              <div class="pricing-features">
+                <ul>
+                  <li><i class="fas fa-check"></i> Fassadengerüst bis 3 Etagen</li>
+                  <li><i class="fas fa-check"></i> Montage & Demontage</li>
+                  <li><i class="fas fa-check"></i> Grundlegende Sicherheitsausstattung</li>
+                  <li><i class="fas fa-check"></i> 24h Lieferung</li>
+                  <li><i class="fas fa-check"></i> Telefonischer Support</li>
+                  <li class="not-included"><i class="fas fa-times"></i> Fahrgerüst</li>
+                  <li class="not-included"><i class="fas fa-times"></i> Sonderkonstruktionen</li>
+                </ul>
+              </div>
+              
+              <div class="pricing-footer">
+                <button class="pricing-btn basic-btn">
+                  <span>Jetzt anfragen</span>
+                  <i class="fas fa-arrow-right"></i>
+                </button>
+                <p class="pricing-note">Mindestmietdauer: 1 Woche</p>
+              </div>
+            </div>
+            
+            <!-- Professional Tarif (Featured) -->
+            <div class="pricing-card professional featured" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+              <div class="featured-badge">
+                <i class="fas fa-star"></i>
+                <span>Beliebt</span>
+              </div>
+              
+              <div class="pricing-header">
+                <div class="pricing-icon">
+                  <i class="fas fa-building"></i>
+                </div>
+                <h3>Professional</h3>
+                <div class="pricing-price">
+                  <span class="currency">€</span>
+                  <span class="amount">499</span>
+                  <span class="period">/Tag</span>
+                </div>
+                <p class="pricing-description">Ideal für gewerbliche Projekte und mittlere Bauvorhaben</p>
+              </div>
+              
+              <div class="pricing-features">
+                <ul>
+                  <li><i class="fas fa-check"></i> Fassadengerüst bis 6 Etagen</li>
+                  <li><i class="fas fa-check"></i> Fahrgerüst inklusive</li>
+                  <li><i class="fas fa-check"></i> Vollständige Sicherheitsausstattung</li>
+                  <li><i class="fas fa-check"></i> 12h Lieferung</li>
+                  <li><i class="fas fa-check"></i> Persönlicher Ansprechpartner</li>
+                  <li><i class="fas fa-check"></i> Wartung während der Mietdauer</li>
+                  <li><i class="fas fa-check"></i> Flexible Mietdauer</li>
+                  <li class="not-included"><i class="fas fa-times"></i> Komplexe Sonderkonstruktionen</li>
+                </ul>
+              </div>
+              
+              <div class="pricing-footer">
+                <button class="pricing-btn professional-btn">
+                  <span>Jetzt anfragen</span>
+                  <i class="fas fa-arrow-right"></i>
+                </button>
+                <p class="pricing-note">Mindestmietdauer: 3 Tage</p>
+              </div>
+            </div>
+            
+            <!-- Premium Tarif -->
+            <div class="pricing-card premium" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+              <div class="pricing-header">
+                <div class="pricing-icon">
+                  <i class="fas fa-crown"></i>
+                </div>
+                <h3>Premium</h3>
+                <div class="pricing-price">
+                  <span class="currency">€</span>
+                  <span class="amount">899</span>
+                  <span class="period">/Tag</span>
+                </div>
+                <p class="pricing-description">Für große Projekte und spezielle Anforderungen</p>
+              </div>
+              
+              <div class="pricing-features">
+                <ul>
+                  <li><i class="fas fa-check"></i> Unbegrenzte Gerüsthöhe</li>
+                  <li><i class="fas fa-check"></i> Alle Gerüsttypen inklusive</li>
+                  <li><i class="fas fa-check"></i> Sonderkonstruktionen</li>
+                  <li><i class="fas fa-check"></i> 6h Express-Lieferung</li>
+                  <li><i class="fas fa-check"></i> 24/7 Support</li>
+                  <li><i class="fas fa-check"></i> Vollständige Projektbetreuung</li>
+                  <li><i class="fas fa-check"></i> Individuelle Planung</li>
+                  <li><i class="fas fa-check"></i> Keine Mindestmietdauer</li>
+                </ul>
+              </div>
+              
+              <div class="pricing-footer">
+                <button class="pricing-btn premium-btn">
+                  <span>Jetzt anfragen</span>
+                  <i class="fas fa-arrow-right"></i>
+                </button>
+                <p class="pricing-note">Individuelle Angebote auf Anfrage</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Zusätzliche Informationen -->
+          <div class="pricing-info" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+            <div class="info-grid">
+              <div class="info-item">
+                <i class="fas fa-shield-alt"></i>
+                <h4>Sicherheit garantiert</h4>
+                <p>Alle Gerüste entsprechen den höchsten Sicherheitsstandards</p>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-clock"></i>
+                <h4>Flexible Termine</h4>
+                <p>Wir passen uns Ihrem Zeitplan an - auch kurzfristig</p>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-tools"></i>
+                <h4>Professioneller Service</h4>
+                <p>Erfahrene Monteure und umfassender Support</p>
+              </div>
+            </div>
         </div>
-        <div class="leistung-card">
-          <div class="leistung-icon">🛠️</div>
-          <h3>Sonderkonstruktionen</h3>
-          <p>Maßgeschneiderte Lösungen</p>
         </div>
       </div>
     </section>
-    <section class="referenzen" id="referenzen" data-aos="fade-up" data-aos-duration="1000">
-      <h2>Referenzen</h2>
-      <div class="gallery-grid">
-        <a href="#img1"><img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Referenz 1"></a>
-        <a href="#img2"><img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Referenz 2"></a>
-        <a href="#img3"><img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Referenz 3"></a>
-        <a href="#img4"><img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80" alt="Referenz 4"></a>
-        <a href="#img5"><img src="https://images.unsplash.com/photo-1468421870903-4df1664ac249?auto=format&fit=crop&w=600&q=80" alt="Referenz 5"></a>
-        <a href="#img6"><img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80" alt="Referenz 6"></a>
-        <a href="#img7"><img src="https://images.unsplash.com/photo-1465101178521-c1a9136a3c8b?auto=format&fit=crop&w=600&q=80" alt="Referenz 7"></a>
-        <a href="#img8"><img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&w=600&q=80" alt="Referenz 8"></a>
-        <a href="#img9"><img src="https://images.unsplash.com/photo-1463123081488-789f998ac9c4?auto=format&fit=crop&w=600&q=80" alt="Referenz 9"></a>
-        <a href="#img10"><img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80" alt="Referenz 10"></a>
-        <a href="#img11"><img src="https://images.unsplash.com/photo-1468421870903-4df1664ac249?auto=format&fit=crop&w=600&q=80" alt="Referenz 11"></a>
-        <a href="#img12"><img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Referenz 12"></a>
+
+    <!-- Modernisierte Referenzen Sektion -->
+    <section class="referenzen" id="referenzen">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up" data-aos-duration="800">
+          <h2>Unsere Referenzen</h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">Erfolgreich abgeschlossene Projekte</p>
+        </div>
+        
+        <div class="gallery-container" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+          <!-- Galerie Navigation -->
+          <div class="gallery-nav">
+            <button class="gallery-filter active" data-filter="all">Alle Projekte</button>
+            <button class="gallery-filter" data-filter="fassade">Fassadengerüste</button>
+            <button class="gallery-filter" data-filter="fahrgeruest">Fahrgerüste</button>
+            <button class="gallery-filter" data-filter="sonder">Sonderkonstruktionen</button>
+          </div>
+          
+          <!-- Neue moderne Galerie -->
+          <div class="modern-gallery">
+            <!-- Fassadengerüst Projekte -->
+            <div class="gallery-item" data-category="fassade" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="100">
+              <div class="gallery-image">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Fassadengerüst Projekt 1">
+                <div class="gallery-overlay">
+                  <div class="overlay-content">
+                    <i class="fas fa-search-plus"></i>
+                    <h4>Fassadengerüst Wohnhaus</h4>
+                    <p>3-stöckiges Wohnhaus in München</p>
+                    <span class="project-type">Fassadengerüst</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="gallery-item" data-category="fassade" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="150">
+              <div class="gallery-image">
+                <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Fassadengerüst Projekt 2">
+                <div class="gallery-overlay">
+                  <div class="overlay-content">
+                    <i class="fas fa-search-plus"></i>
+                    <h4>Geschäftsgebäude Sanierung</h4>
+                    <p>Komplette Fassadensanierung</p>
+                    <span class="project-type">Fassadengerüst</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Fahrgerüst Projekte -->
+            <div class="gallery-item" data-category="fahrgeruest" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="200">
+              <div class="gallery-image">
+                <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80" alt="Fahrgerüst Projekt 1">
+                <div class="gallery-overlay">
+                  <div class="overlay-content">
+                    <i class="fas fa-search-plus"></i>
+                    <h4>Fahrgerüst Innenausbau</h4>
+                    <p>Flexible Lösung für Innenarbeiten</p>
+                    <span class="project-type">Fahrgerüst</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="gallery-item" data-category="fahrgeruest" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="250">
+              <div class="gallery-image">
+                <img src="https://images.unsplash.com/photo-1468421870903-4df1664ac249?auto=format&fit=crop&w=600&q=80" alt="Fahrgerüst Projekt 2">
+                <div class="gallery-overlay">
+                  <div class="overlay-content">
+                    <i class="fas fa-search-plus"></i>
+                    <h4>Industriehalle Renovierung</h4>
+                    <p>Mobile Lösung für große Hallen</p>
+                    <span class="project-type">Fahrgerüst</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Sonderkonstruktionen -->
+            <div class="gallery-item" data-category="sonder" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="300">
+              <div class="gallery-image">
+                <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80" alt="Sonderkonstruktion 1">
+                <div class="gallery-overlay">
+                  <div class="overlay-content">
+                    <i class="fas fa-search-plus"></i>
+                    <h4>Brückenkonstruktion</h4>
+                    <p>Maßgeschneiderte Lösung</p>
+                    <span class="project-type">Sonderkonstruktion</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="gallery-item" data-category="sonder" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="350">
+              <div class="gallery-image">
+                <img src="https://images.unsplash.com/photo-1465101178521-c1a9136a3c8b?auto=format&fit=crop&w=600&q=80" alt="Sonderkonstruktion 2">
+                <div class="gallery-overlay">
+                  <div class="overlay-content">
+                    <i class="fas fa-search-plus"></i>
+                    <h4>Denkmal Sanierung</h4>
+                    <p>Historisches Gebäude</p>
+                    <span class="project-type">Sonderkonstruktion</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Weitere Projekte -->
+            <div class="gallery-item" data-category="fassade" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="400">
+              <div class="gallery-image">
+                <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&w=600&q=80" alt="Fassadengerüst Projekt 3">
+                <div class="gallery-overlay">
+                  <div class="overlay-content">
+                    <i class="fas fa-search-plus"></i>
+                    <h4>Hochhaus Sanierung</h4>
+                    <p>20-stöckiges Gebäude</p>
+                    <span class="project-type">Fassadengerüst</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="gallery-item" data-category="fahrgeruest" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="450">
+              <div class="gallery-image">
+                <img src="https://images.unsplash.com/photo-1463123081488-789f998ac9c4?auto=format&fit=crop&w=600&q=80" alt="Fahrgerüst Projekt 3">
+                <div class="gallery-overlay">
+                  <div class="overlay-content">
+                    <i class="fas fa-search-plus"></i>
+                    <h4>Bürokomplex Innenarbeiten</h4>
+                    <p>Mehrere Etagen</p>
+                    <span class="project-type">Fahrgerüst</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="gallery-item" data-category="sonder" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="500">
+              <div class="gallery-image">
+                <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80" alt="Sonderkonstruktion 3">
+                <div class="gallery-overlay">
+                  <div class="overlay-content">
+                    <i class="fas fa-search-plus"></i>
+                    <h4>Kuppel Konstruktion</h4>
+                    <p>Spezielle Architektur</p>
+                    <span class="project-type">Sonderkonstruktion</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="gallery-item" data-category="fassade" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="550">
+              <div class="gallery-image">
+                <img src="https://images.unsplash.com/photo-1468421870903-4df1664ac249?auto=format&fit=crop&w=600&q=80" alt="Fassadengerüst Projekt 4">
+                <div class="gallery-overlay">
+                  <div class="overlay-content">
+                    <i class="fas fa-search-plus"></i>
+                    <h4>Wohnanlage Komplettsanierung</h4>
+                    <p>Mehrere Gebäude</p>
+                    <span class="project-type">Fassadengerüst</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="gallery-item" data-category="fahrgeruest" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="600">
+              <div class="gallery-image">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Fahrgerüst Projekt 4">
+                <div class="gallery-overlay">
+                  <div class="overlay-content">
+                    <i class="fas fa-search-plus"></i>
+                    <h4>Einkaufszentrum Renovierung</h4>
+                    <p>Großflächige Arbeiten</p>
+                    <span class="project-type">Fahrgerüst</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="gallery-item" data-category="sonder" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="650">
+              <div class="gallery-image">
+                <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Sonderkonstruktion 4">
+                <div class="gallery-overlay">
+                  <div class="overlay-content">
+                    <i class="fas fa-search-plus"></i>
+                    <h4>Kranbahn Konstruktion</h4>
+                    <p>Industrielle Anwendung</p>
+                    <span class="project-type">Sonderkonstruktion</span>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          <!-- Desktop Navigation Dots -->
+          <div class="desktop-gallery-nav" id="desktopGalleryNav">
+              <!-- Wird dynamisch generiert -->
+              </div>
+          
+          <!-- Mobile Navigation Dots -->
+          <div class="mobile-gallery-nav" id="mobileGalleryNav">
+            <!-- Wird dynamisch generiert -->
+          </div>
+          
+          <!-- Galerie Statistiken -->
+          <div class="gallery-stats" data-aos="fade-up" data-aos-duration="800" data-aos-delay="700">
+            <div class="stat-item">
+              <div class="stat-number">150+</div>
+              <div class="stat-label">Abgeschlossene Projekte</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">20+</div>
+              <div class="stat-label">Jahre Erfahrung</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">100%</div>
+              <div class="stat-label">Zufriedene Kunden</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">24/7</div>
+              <div class="stat-label">Support verfügbar</div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <section class="kontakt" id="kontakt" data-aos="fade-up" data-aos-duration="1000">
+
+    <!-- Modernisierte Kontakt Sektion -->
+    <section class="kontakt" id="kontakt">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up" data-aos-duration="800">
       <h2>Kontakt</h2>
-      <form class="kontakt-form" autocomplete="off">
+          <div class="section-divider"></div>
+          <p class="section-subtitle">Lassen Sie uns über Ihr Projekt sprechen</p>
+        </div>
+        
+        <div class="kontakt-content">
+          <div class="kontakt-info" data-aos="fade-right" data-aos-duration="800" data-aos-delay="200">
+            <div class="info-card">
+              <div class="info-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="info-content">
+                <h4>Adresse</h4>
+                <p>Musterstraße 1<br>12345 Musterstadt</p>
+              </div>
+            </div>
+            
+            <div class="info-card">
+              <div class="info-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="info-content">
+                <h4>Telefon</h4>
+                <p>01234 / 567890</p>
+              </div>
+            </div>
+            
+            <div class="info-card">
+              <div class="info-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="info-content">
+                <h4>E-Mail</h4>
+                <p>info@geruestbau-rynkiewicz.de</p>
+              </div>
+            </div>
+            
+            <div class="info-card">
+              <div class="info-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="info-content">
+                <h4>Öffnungszeiten</h4>
+                <p>Mo - Fr: 7:00 - 17:00<br>Sa: 8:00 - 12:00</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="kontakt-form-container" data-aos="fade-left" data-aos-duration="800" data-aos-delay="400">
+            <form class="kontakt-form modern" autocomplete="off">
+              <div class="form-group">
         <label for="name">Name*</label>
+                <div class="input-wrapper">
+                  <i class="fas fa-user"></i>
         <input type="text" id="name" name="name" required>
+                </div>
+              </div>
+              
+              <div class="form-group">
         <label for="email">E-Mail*</label>
+                <div class="input-wrapper">
+                  <i class="fas fa-envelope"></i>
         <input type="email" id="email" name="email" required>
+                </div>
+              </div>
+              
+              <div class="form-group">
         <label for="telefon">Telefonnummer</label>
+                <div class="input-wrapper">
+                  <i class="fas fa-phone"></i>
         <input type="tel" id="telefon" name="telefon">
+                </div>
+              </div>
+              
+              <div class="form-group">
         <label for="nachricht">Nachricht*</label>
+                <div class="input-wrapper">
+                  <i class="fas fa-comment"></i>
         <textarea id="nachricht" name="nachricht" required></textarea>
-        <div class="dsgvo">
+                </div>
+              </div>
+              
+              <div class="form-group checkbox-group">
+                <div class="checkbox-wrapper">
           <input type="checkbox" id="dsgvo" name="dsgvo" required>
           <label for="dsgvo">Ich habe die <a href="#impressum" style="color:var(--rot);text-decoration:underline;">Datenschutzerklärung</a> gelesen und akzeptiere sie.*</label>
         </div>
-        <button type="submit">Nachricht senden</button>
+              </div>
+              
+              <button type="submit" class="submit-btn">
+                <span>Nachricht senden</span>
+                <i class="fas fa-paper-plane"></i>
+              </button>
       </form>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
-  <footer>
+
+  <!-- Modernisierter Footer -->
+  <footer class="modern-footer">
+    <div class="container">
     <div class="footer-content">
-      <div class="footer-info">
-        <strong>Gerüstbau Rynkiewicz</strong><br>
-        Musterstraße 1, 12345 Musterstadt<br>
-        Tel: 01234 / 567890<br>
-        E-Mail: info@geruestbau-rynkiewicz.de
+        <div class="footer-section">
+          <div class="footer-logo">
+            <img src="geruestbau-rynkiewicz-logo-white.png" alt="Gerüstbau Rynkiewicz Logo">
+          </div>
+          <p class="footer-description">
+            Ihr zuverlässiger Partner für professionellen Gerüstbau. Über 20 Jahre Erfahrung in Sicherheit und Qualität.
+          </p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Unternehmen</h4>
+          <ul class="footer-links">
+            <li><a href="#startseite">Startseite</a></li>
+            <li><a href="#leistungen">Leistungen</a></li>
+            <li><a href="#referenzen">Referenzen</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Kontakt</h4>
+          <div class="contact-info">
+            <p><i class="fas fa-map-marker-alt"></i> Musterstraße 1, 12345 Musterstadt</p>
+            <p><i class="fas fa-phone"></i> 01234 / 567890</p>
+            <p><i class="fas fa-envelope"></i> info@geruestbau-rynkiewicz.de</p>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Rechtliches</h4>
+          <ul class="footer-links">
+            <li><a href="#impressum">Impressum</a></li>
+            <li><a href="#datenschutz">Datenschutz</a></li>
+            <li><a href="#agb">AGB</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="footer-nav">
-        <a href="#startseite">Startseite</a>
-        <a href="#leistungen">Leistungen</a>
-        <a href="#referenzen">Referenzen</a>
-        <a href="#kontakt">Kontakt</a>
-        <a href="#impressum">Impressum</a>
-        <a href="#datenschutz">Datenschutz</a>
+      
+      <div class="footer-bottom">
+        <div class="footer-divider"></div>
+        <p>&copy; 2024 Gerüstbau Rynkiewicz. Alle Rechte vorbehalten.</p>
       </div>
-    </div>
-    <div class="footer-bottom">
-      &copy; 2024 Gerüstbau Rynkiewicz. Alle Rechte vorbehalten.
     </div>
   </footer>
+
+  <!-- Lightbox Modal für Galerie -->
+  <div id="lightboxModal" class="lightbox-modal">
+    <div class="lightbox-overlay"></div>
+    <div class="lightbox-container">
+      <button class="lightbox-close" id="lightboxClose">
+        <i class="fas fa-times"></i>
+      </button>
+      
+      <button class="lightbox-nav lightbox-prev" id="lightboxPrev">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      
+      <button class="lightbox-nav lightbox-next" id="lightboxNext">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+      
+      <div class="lightbox-content">
+        <img id="lightboxImage" src="" alt="">
+        <div class="lightbox-info">
+          <h3 id="lightboxTitle"></h3>
+          <p id="lightboxDescription"></p>
+          <span id="lightboxType" class="lightbox-type"></span>
+        </div>
+      </div>
+      
+      <div class="lightbox-counter">
+        <span id="lightboxCounter"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal für Preisanfragen -->
+  <div id="pricingModal" class="pricing-modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3 id="modalTitle">Preisanfrage</h3>
+        <button class="modal-close" id="closeModal">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      
+      <div class="modal-content">
+        <div class="modal-package-info">
+          <div class="package-icon">
+            <i id="modalIcon" class="fas fa-home"></i>
+          </div>
+          <div class="package-details">
+            <h4 id="modalPackageName">Basic</h4>
+            <div class="package-price">
+              <span class="currency">€</span>
+              <span id="modalPrice">299</span>
+              <span class="period">/Tag</span>
+            </div>
+          </div>
+        </div>
+        
+        <form class="modal-form" id="pricingForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="modalName">Name*</label>
+              <div class="input-wrapper">
+                <i class="fas fa-user"></i>
+                <input type="text" id="modalName" name="name" required>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="modalEmail">E-Mail*</label>
+              <div class="input-wrapper">
+                <i class="fas fa-envelope"></i>
+                <input type="email" id="modalEmail" name="email" required>
+              </div>
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="modalPhone">Telefon</label>
+              <div class="input-wrapper">
+                <i class="fas fa-phone"></i>
+                <input type="tel" id="modalPhone" name="phone">
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="modalDuration">Gewünschte Mietdauer*</label>
+              <div class="input-wrapper">
+                <i class="fas fa-calendar"></i>
+                <select id="modalDuration" name="duration" required>
+                  <option value="">Bitte wählen</option>
+                  <option value="1-3">1-3 Tage</option>
+                  <option value="1-woche">1 Woche</option>
+                  <option value="2-wochen">2 Wochen</option>
+                  <option value="1-monat">1 Monat</option>
+                  <option value="länger">Länger</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          
+          <div class="form-group full-width">
+            <label for="modalProject">Projektbeschreibung*</label>
+            <div class="input-wrapper">
+              <i class="fas fa-file-alt"></i>
+              <textarea id="modalProject" name="project" rows="4" placeholder="Beschreiben Sie Ihr Projekt kurz..." required></textarea>
+            </div>
+          </div>
+          
+          <div class="form-group full-width">
+            <label for="modalAddress">Adresse/Standort</label>
+            <div class="input-wrapper">
+              <i class="fas fa-map-marker-alt"></i>
+              <input type="text" id="modalAddress" name="address" placeholder="Wo soll das Gerüst aufgebaut werden?">
+            </div>
+          </div>
+          
+          <div class="form-group checkbox-group full-width">
+            <div class="checkbox-wrapper">
+              <input type="checkbox" id="modalDsgvo" name="dsgvo" required>
+              <label for="modalDsgvo">Ich habe die <a href="#datenschutz" style="color:var(--rot);text-decoration:underline;">Datenschutzerklärung</a> gelesen und akzeptiere sie.*</label>
+            </div>
+          </div>
+          
+          <div class="modal-actions">
+            <button type="button" class="btn-secondary" id="cancelModal">Abbrechen</button>
+            <button type="submit" class="btn-primary">
+              <span>Anfrage senden</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
   <!-- Dummy-Abschnitte für Impressum & Datenschutz -->
   <section id="impressum" style="display:none;"></section>
   <section id="datenschutz" style="display:none;"></section>
@@ -141,26 +780,39 @@
   <!-- Lenis Smooth Scroll -->
   <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.18/bundled/lenis.min.js"></script>
   <script>
-    // Lenis initialisieren
+    // Lenis initialisieren - optimiert für Mobile
+    const isMobile = window.innerWidth <= 768;
+    
     const lenis = new Lenis({
       smooth: true,
-      lerp: 0.08
+      lerp: isMobile ? 0.12 : 0.08, // Schnellerer Lerp auf Mobile
+      duration: isMobile ? 0.8 : 1.2, // Kürzere Dauer auf Mobile
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Optimierte Easing-Funktion
+      orientation: 'vertical',
+      gestureOrientation: 'vertical',
+      smoothWheel: !isMobile, // Deaktiviere smooth wheel auf Mobile
+      wheelMultiplier: isMobile ? 0.8 : 1, // Reduzierte Wheel-Sensitivität auf Mobile
+      touchMultiplier: 2, // Touch-Sensitivität für Mobile
+      infinite: false
     });
+    
     function raf(time) {
       lenis.raf(time);
       requestAnimationFrame(raf);
     }
     requestAnimationFrame(raf);
 
-    // Parallax für das Video (ursprüngliche Stärke)
+    // Parallax für das Video - optimiert für Mobile
     const video = document.querySelector('.hero-video');
+    if (video && !isMobile) { // Nur auf Desktop aktivieren
     window.addEventListener('scroll', () => {
       const scrollY = window.scrollY || window.pageYOffset;
       // Parallax: Video bewegt sich mit 40% der Scrollgeschwindigkeit
       video.style.transform = `translateY(${scrollY * 0.4}px)`;
     });
+    }
 
-    // Lenis Smooth Scroll für Anker-Links
+    // Lenis Smooth Scroll für Anker-Links - optimiert für Mobile
     document.querySelectorAll('.nav-links a').forEach(link => {
       link.addEventListener('click', function(e) {
         const href = this.getAttribute('href');
@@ -168,69 +820,257 @@
           e.preventDefault();
           const target = document.querySelector(href);
           if (target) {
-            lenis.scrollTo(target, { offset: 0, duration: 1.2 });
+            const scrollOptions = {
+              offset: isMobile ? -80 : 0, // Offset für Mobile-Navbar
+              duration: isMobile ? 0.8 : 1.2, // Kürzere Dauer auf Mobile
+              easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)) // Optimierte Easing
+            };
+            lenis.scrollTo(target, scrollOptions);
           }
         }
       });
     });
 
-    // CTA Button Smooth Scroll
+    // CTA Button Smooth Scroll - optimiert für Mobile
     const ctaButton = document.querySelector('.cta-btn');
     if (ctaButton) {
       ctaButton.addEventListener('click', function(e) {
         e.preventDefault();
         const target = document.querySelector('#kontakt');
         if (target) {
-          lenis.scrollTo(target, { offset: 0, duration: 1.2 });
+          const scrollOptions = {
+            offset: isMobile ? -80 : 0, // Offset für Mobile-Navbar
+            duration: isMobile ? 0.8 : 1.2, // Kürzere Dauer auf Mobile
+            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)) // Optimierte Easing
+          };
+          lenis.scrollTo(target, scrollOptions);
         }
       });
     }
 
-    // Karussell-Drag/Swipe für Referenzen
-    const carousel = document.querySelector('.gallery-grid');
-    let isDown = false;
-    let startX;
-    let scrollLeft;
-    if (carousel) {
-      // Drag&Drop der Bilder und Links verhindern
-      carousel.querySelectorAll('img').forEach(img => {
-        img.addEventListener('dragstart', e => e.preventDefault());
-      });
-      carousel.querySelectorAll('a').forEach(a => {
-        a.addEventListener('dragstart', e => e.preventDefault());
-      });
-      carousel.addEventListener('mousedown', (e) => {
-        isDown = true;
-        carousel.classList.add('active');
-        startX = e.pageX - carousel.offsetLeft;
-        scrollLeft = carousel.scrollLeft;
-      });
-      carousel.addEventListener('mouseleave', () => {
-        isDown = false;
-        carousel.classList.remove('active');
-      });
-      carousel.addEventListener('mouseup', () => {
-        isDown = false;
-        carousel.classList.remove('active');
-      });
-      carousel.addEventListener('mousemove', (e) => {
-        if (!isDown) return;
+    // Moderne Galerie Funktionalität
+    const modernGallery = document.querySelector('.modern-gallery');
+    const mobileGalleryNav = document.getElementById('mobileGalleryNav');
+    const desktopGalleryNav = document.getElementById('desktopGalleryNav');
+    
+    if (modernGallery) {
+      const galleryItems = modernGallery.querySelectorAll('.gallery-item');
+      let isMobile = window.innerWidth <= 768;
+      
+      // Mobile Karussell Funktionalität
+      function initMobileCarousel() {
+        if (!isMobile) return;
+        
+        // Navigation Dots erstellen
+        createMobileDots();
+        
+        // Scroll Event für Dots-Update
+        modernGallery.addEventListener('scroll', updateMobileDots);
+        
+        // Touch/Swipe Support
+        let touchStartX = 0;
+        let touchEndX = 0;
+        
+        modernGallery.addEventListener('touchstart', (e) => {
+          touchStartX = e.changedTouches[0].screenX;
+        });
+        
+        modernGallery.addEventListener('touchend', (e) => {
+          touchEndX = e.changedTouches[0].screenX;
+          handleSwipe();
+        });
+        
+        function handleSwipe() {
+          const swipeThreshold = 50;
+          const diffX = touchStartX - touchEndX;
+          
+          if (Math.abs(diffX) > swipeThreshold) {
+            const currentIndex = getCurrentSlideIndex();
+            const totalSlides = galleryItems.length;
+            
+            if (diffX > 0 && currentIndex < totalSlides - 1) {
+              // Swipe nach links - nächstes Bild
+              scrollToSlide(currentIndex + 1);
+            } else if (diffX < 0 && currentIndex > 0) {
+              // Swipe nach rechts - vorheriges Bild
+              scrollToSlide(currentIndex - 1);
+            }
+          }
+        }
+      }
+      
+      // Navigation Dots erstellen
+      function createMobileDots() {
+        if (!mobileGalleryNav) return;
+        
+        mobileGalleryNav.innerHTML = '';
+        
+        galleryItems.forEach((_, index) => {
+          const dot = document.createElement('button');
+          dot.className = 'mobile-gallery-dot';
+          dot.setAttribute('data-slide', index);
+          dot.addEventListener('click', () => scrollToSlide(index));
+          mobileGalleryNav.appendChild(dot);
+        });
+        
+        // Ersten Dot als aktiv markieren
+        updateMobileDots();
+      }
+      
+      // Aktuellen Slide-Index ermitteln
+      function getCurrentSlideIndex() {
+        const scrollLeft = modernGallery.scrollLeft;
+        const itemWidth = modernGallery.querySelector('.gallery-item').offsetWidth;
+        const gap = isMobile ? 16 : 32; // Unterschiedliche Gaps für Mobile/Desktop
+        
+        return Math.round(scrollLeft / (itemWidth + gap));
+      }
+      
+      // Zu bestimmtem Slide scrollen
+      function scrollToSlide(index) {
+        const itemWidth = modernGallery.querySelector('.gallery-item').offsetWidth;
+        const gap = isMobile ? 16 : 32; // Unterschiedliche Gaps für Mobile/Desktop
+        const scrollPosition = index * (itemWidth + gap);
+        
+        modernGallery.scrollTo({
+          left: scrollPosition,
+          behavior: 'smooth'
+        });
+      }
+      
+      // Mobile Dots aktualisieren
+      function updateMobileDots() {
+        if (!mobileGalleryNav) return;
+        
+        const dots = mobileGalleryNav.querySelectorAll('.mobile-gallery-dot');
+        const currentIndex = getCurrentSlideIndex();
+        
+        dots.forEach((dot, index) => {
+          dot.classList.toggle('active', index === currentIndex);
+        });
+      }
+      
+      // Desktop Karussell Funktionalität
+      function initDesktopCarousel() {
+        if (isMobile) return;
+        
+        // Navigation Dots erstellen
+        createDesktopDots();
+        
+        // Scroll Event für Dots-Update
+        modernGallery.addEventListener('scroll', updateDesktopDots);
+        
+        // Mausrad-Scroll für Desktop
+        modernGallery.addEventListener('wheel', handleDesktopWheel);
+        
+        // Keyboard Navigation
+        document.addEventListener('keydown', handleDesktopKeyboard);
+        
+        // Hover-Effekte für Galerie-Items
+        galleryItems.forEach(item => {
+          item.addEventListener('click', function(e) {
+          e.preventDefault();
+            // Lightbox öffnen (wird später implementiert)
+            console.log('Galerie-Item geklickt:', this);
+          });
+          
+          item.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-8px) scale(1.02)';
+          });
+          
+          item.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0) scale(1)';
+          });
+        });
+      }
+      
+      // Desktop Navigation Dots erstellen
+      function createDesktopDots() {
+        if (!desktopGalleryNav) return;
+        
+        desktopGalleryNav.innerHTML = '';
+        
+        galleryItems.forEach((_, index) => {
+          const dot = document.createElement('button');
+          dot.className = 'desktop-gallery-dot';
+          dot.setAttribute('data-slide', index);
+          dot.addEventListener('click', () => scrollToSlide(index));
+          desktopGalleryNav.appendChild(dot);
+        });
+        
+        // Ersten Dot als aktiv markieren
+        updateDesktopDots();
+      }
+      
+      // Desktop Dots aktualisieren
+      function updateDesktopDots() {
+        if (!desktopGalleryNav) return;
+        
+        const dots = desktopGalleryNav.querySelectorAll('.desktop-gallery-dot');
+        const currentIndex = getCurrentSlideIndex();
+        
+        dots.forEach((dot, index) => {
+          dot.classList.toggle('active', index === currentIndex);
+        });
+      }
+      
+      // Desktop Mausrad-Handler
+      function handleDesktopWheel(e) {
         e.preventDefault();
-        const x = e.pageX - carousel.offsetLeft;
-        const walk = (x - startX) * 1.2; // Scroll-Geschwindigkeit
-        carousel.scrollLeft = scrollLeft - walk;
-      });
-      // Touch Support
-      let touchStartX = 0;
-      let touchScrollLeft = 0;
-      carousel.addEventListener('touchstart', (e) => {
-        touchStartX = e.touches[0].pageX;
-        touchScrollLeft = carousel.scrollLeft;
-      });
-      carousel.addEventListener('touchmove', (e) => {
-        const x = e.touches[0].pageX;
-        const walk = (x - touchStartX) * 1.2;
-        carousel.scrollLeft = touchScrollLeft - walk;
+        
+        const scrollAmount = e.deltaY;
+        const currentScrollLeft = modernGallery.scrollLeft;
+        const itemWidth = modernGallery.querySelector('.gallery-item').offsetWidth;
+        const gap = 32; // Gap zwischen Items
+        
+        const newScrollLeft = currentScrollLeft + scrollAmount;
+        modernGallery.scrollTo({
+          left: newScrollLeft,
+          behavior: 'smooth'
+        });
+      }
+      
+      // Desktop Keyboard Navigation
+      function handleDesktopKeyboard(e) {
+        if (isMobile) return;
+        
+        const currentIndex = getCurrentSlideIndex();
+        const totalSlides = galleryItems.length;
+        
+        if (e.key === 'ArrowLeft' && currentIndex > 0) {
+          scrollToSlide(currentIndex - 1);
+        } else if (e.key === 'ArrowRight' && currentIndex < totalSlides - 1) {
+          scrollToSlide(currentIndex + 1);
+        }
+      }
+      
+      // Initialisierung basierend auf Bildschirmgröße
+      function initGallery() {
+        isMobile = window.innerWidth <= 768;
+        
+      if (isMobile) {
+          initMobileCarousel();
+        } else {
+          initDesktopCarousel();
+        }
+      }
+      
+      // Initial starten
+      initGallery();
+      
+      // Resize Handler
+      window.addEventListener('resize', () => {
+        const wasMobile = isMobile;
+        initGallery();
+        
+        // Nur neu initialisieren wenn sich Mobile-Status geändert hat
+        if (wasMobile !== isMobile) {
+        if (isMobile) {
+            initMobileCarousel();
+          } else {
+            initDesktopCarousel();
+          }
+        }
       });
     }
 
@@ -420,6 +1260,598 @@
           // Lightbox schließen und nächste öffnen
           window.location.hash = `#img${nextIdx + 1}`;
         }
+      });
+    });
+  </script>
+
+  <!-- Galerie Filter JavaScript -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const filterButtons = document.querySelectorAll('.gallery-filter');
+      const galleryItems = document.querySelectorAll('.gallery-item');
+      
+      // Filter-Funktionalität für Karussell
+      filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          const filter = this.getAttribute('data-filter');
+          
+          // Aktiven Button aktualisieren
+          filterButtons.forEach(btn => btn.classList.remove('active'));
+          this.classList.add('active');
+          
+          // Galerie-Items filtern
+          galleryItems.forEach(item => {
+            const category = item.getAttribute('data-category');
+            
+            if (filter === 'all' || category === filter) {
+              item.classList.remove('hidden');
+              item.style.display = 'flex';
+            } else {
+              item.classList.add('hidden');
+              item.style.display = 'none';
+            }
+          });
+          
+          // Galerie zurücksetzen
+          setTimeout(() => {
+            // Moderne Galerie benötigt keine spezielle Initialisierung
+          }, 300);
+          
+          // Smooth Animation für sichtbare Items
+          setTimeout(() => {
+            galleryItems.forEach(item => {
+              if (!item.classList.contains('hidden')) {
+                item.style.animation = 'fadeInScale 0.6s ease-out';
+              }
+            });
+          }, 100);
+        });
+      });
+      
+      // Hover-Effekte für Galerie-Items
+      galleryItems.forEach(item => {
+        item.addEventListener('mouseenter', function() {
+          this.style.transform = 'translateY(-8px)';
+        });
+        
+        item.addEventListener('mouseleave', function() {
+          this.style.transform = 'translateY(0)';
+        });
+      });
+      
+      // Touch-Support für mobile Geräte
+      if ('ontouchstart' in window) {
+        galleryItems.forEach(item => {
+          item.addEventListener('touchstart', function() {
+            this.style.transform = 'translateY(-4px)';
+          });
+          
+          item.addEventListener('touchend', function() {
+            this.style.transform = 'translateY(0)';
+          });
+        });
+      }
+    });
+  </script>
+
+  <!-- Dynamische Gerüst-Unterstrich Animation JavaScript -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const sectionHeaders = document.querySelectorAll('.section-header h2');
+      let animationStates = new Map(); // Speichert den Animationszustand für jeden Header
+      
+      // Initialisiere Animationszustände
+      sectionHeaders.forEach(header => {
+        animationStates.set(header, false);
+      });
+
+      function updateScaffoldAnimations() {
+        const windowHeight = window.innerHeight;
+        const scrollY = window.scrollY;
+        
+        sectionHeaders.forEach(header => {
+          const rect = header.getBoundingClientRect();
+          const elementTop = rect.top;
+          const elementBottom = rect.bottom;
+          const elementHeight = rect.height;
+          
+          // Berechne Sichtbarkeit des Elements
+          const visibleTop = Math.max(0, elementTop);
+          const visibleBottom = Math.min(windowHeight, elementBottom);
+          const visibleHeight = Math.max(0, visibleBottom - visibleTop);
+          const visibilityRatio = visibleHeight / elementHeight;
+          
+          // Element ist im Zentrum des Viewports (mit größerer Toleranz)
+          const elementCenter = elementTop + elementHeight / 2;
+          const viewportCenter = windowHeight / 2;
+          const centerDistance = Math.abs(elementCenter - viewportCenter);
+          const isInCenter = centerDistance < 300; // Erhöhte Toleranz auf 300px
+          
+          // Animation auslösen wenn Element sichtbar ist (nicht nur im Zentrum)
+          if (visibilityRatio > 0.3 && elementBottom > 0 && elementTop < windowHeight) {
+            if (!animationStates.get(header)) {
+              header.classList.add('animate-scaffold');
+              animationStates.set(header, true);
+            }
+          } else {
+            // Animation entfernen nur wenn Element komplett aus dem Viewport ist
+            if (animationStates.get(header) && (elementBottom < 0 || elementTop > windowHeight)) {
+              header.classList.remove('animate-scaffold');
+              animationStates.set(header, false);
+            }
+          }
+        });
+      }
+
+      // Throttled Scroll-Event für bessere Performance
+      let ticking = false;
+      function throttledUpdate() {
+        if (!ticking) {
+          requestAnimationFrame(() => {
+            updateScaffoldAnimations();
+            ticking = false;
+          });
+          ticking = true;
+        }
+      }
+
+      // Event Listener
+      window.addEventListener('scroll', throttledUpdate, { passive: true });
+      
+      // Initial Update
+      updateScaffoldAnimations();
+      
+      // Resize Event für responsive Anpassungen
+      window.addEventListener('resize', throttledUpdate, { passive: true });
+    });
+  </script>
+
+  <!-- Lightbox JavaScript -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const lightboxModal = document.getElementById('lightboxModal');
+      const lightboxClose = document.getElementById('lightboxClose');
+      const lightboxPrev = document.getElementById('lightboxPrev');
+      const lightboxNext = document.getElementById('lightboxNext');
+      const lightboxImage = document.getElementById('lightboxImage');
+      const lightboxTitle = document.getElementById('lightboxTitle');
+      const lightboxDescription = document.getElementById('lightboxDescription');
+      const lightboxType = document.getElementById('lightboxType');
+      const lightboxCounter = document.getElementById('lightboxCounter');
+      
+      let currentImageIndex = 0;
+      let galleryImages = [];
+      
+      // Alle Galerie-Items sammeln
+      function initializeGallery() {
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        galleryImages = Array.from(galleryItems).map(item => {
+          const img = item.querySelector('img');
+          const overlay = item.querySelector('.overlay-content');
+          return {
+            src: img.src,
+            alt: img.alt,
+            title: overlay ? overlay.querySelector('h4').textContent : '',
+            description: overlay ? overlay.querySelector('p').textContent : '',
+            type: overlay ? overlay.querySelector('.project-type').textContent : ''
+          };
+        });
+      }
+      
+      // Lightbox öffnen
+      function openLightbox(index) {
+        currentImageIndex = index;
+        updateLightboxContent();
+        lightboxModal.classList.add('active');
+        
+        // Scroll-Locking für Mobile
+        if (window.innerWidth <= 768) {
+          const scrollY = window.scrollY;
+          document.body.style.position = 'fixed';
+          document.body.style.top = `-${scrollY}px`;
+          document.body.style.width = '100%';
+          document.body.style.overflow = 'hidden';
+          document.body.classList.add('lightbox-open');
+        } else {
+          document.body.style.overflow = 'hidden';
+        }
+      }
+      
+      // Lightbox schließen (wird später überschrieben)
+      function closeLightbox() {
+        lightboxModal.classList.remove('active');
+        
+        // Scroll-Locking für Mobile aufheben
+        if (window.innerWidth <= 768) {
+          const scrollY = document.body.style.top;
+          document.body.style.position = '';
+          document.body.style.top = '';
+          document.body.style.width = '';
+          document.body.style.overflow = '';
+          document.body.classList.remove('lightbox-open');
+          window.scrollTo(0, parseInt(scrollY || '0') * -1);
+        } else {
+          document.body.style.overflow = '';
+        }
+        
+        resetZoom(); // Zoom zurücksetzen
+      }
+      
+      // Lightbox-Inhalt aktualisieren
+      function updateLightboxContent() {
+        const image = galleryImages[currentImageIndex];
+        lightboxImage.src = image.src;
+        lightboxImage.alt = image.alt;
+        lightboxTitle.textContent = image.title;
+        lightboxDescription.textContent = image.description;
+        lightboxType.textContent = image.type;
+        lightboxCounter.textContent = `${currentImageIndex + 1} / ${galleryImages.length}`;
+      }
+      
+      // Nächstes Bild
+      function nextImage() {
+        currentImageIndex = (currentImageIndex + 1) % galleryImages.length;
+        updateLightboxContent();
+        resetZoom(); // Zoom zurücksetzen
+      }
+      
+      // Vorheriges Bild
+      function prevImage() {
+        currentImageIndex = (currentImageIndex - 1 + galleryImages.length) % galleryImages.length;
+        updateLightboxContent();
+        resetZoom(); // Zoom zurücksetzen
+      }
+      
+      // Event Listener für Galerie-Items
+      function addGalleryEventListeners() {
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        galleryItems.forEach((item, index) => {
+          item.addEventListener('click', function(e) {
+            e.preventDefault();
+            openLightbox(index);
+          });
+        });
+      }
+      
+      // Event Listener für Lightbox-Controls
+      lightboxClose.addEventListener('click', closeLightbox);
+      lightboxPrev.addEventListener('click', prevImage);
+      lightboxNext.addEventListener('click', nextImage);
+      
+      // Lightbox schließen bei Klick auf Overlay
+      lightboxModal.addEventListener('click', function(e) {
+        if (e.target === lightboxModal || e.target.classList.contains('lightbox-overlay')) {
+          closeLightbox();
+        }
+      });
+      
+      // ESC-Taste zum Schließen und Zoom-Reset
+      document.addEventListener('keydown', function(e) {
+        if (lightboxModal.classList.contains('active')) {
+          if (e.key === 'Escape') {
+            if (isZoomed) {
+              resetZoom();
+            } else {
+              closeLightbox();
+            }
+          } else if (e.key === 'ArrowLeft') {
+            prevImage();
+          } else if (e.key === 'ArrowRight') {
+            nextImage();
+          }
+        }
+      });
+      
+      // Erweiterte Zoom-Funktionalität mit Panning
+      let isZoomed = false;
+      let isDragging = false;
+      let startX, startY, translateX = 0, translateY = 0;
+      
+      lightboxImage.addEventListener('click', function(e) {
+        e.stopPropagation();
+        
+        if (!isZoomed) {
+          // Zoom an Klick-Position
+          const rect = this.getBoundingClientRect();
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+          
+          // Berechne Transform-Origin basierend auf Klick-Position
+          const originX = (x / rect.width) * 100;
+          const originY = (y / rect.height) * 100;
+          
+          this.style.transformOrigin = `${originX}% ${originY}%`;
+          this.classList.add('zoomed');
+          isZoomed = true;
+          
+          // Reset Panning
+          translateX = 0;
+          translateY = 0;
+          this.style.transform = `scale(2.5) translate(${translateX}px, ${translateY}px)`;
+        } else {
+          // Zoom zurücksetzen
+          resetZoom();
+        }
+      });
+      
+      // Panning-Funktionalität
+      lightboxImage.addEventListener('mousedown', function(e) {
+        if (isZoomed) {
+          e.preventDefault();
+          isDragging = true;
+          startX = e.clientX - translateX;
+          startY = e.clientY - translateY;
+          this.style.cursor = 'grabbing';
+        }
+      });
+      
+      document.addEventListener('mousemove', function(e) {
+        if (isDragging && isZoomed) {
+          translateX = e.clientX - startX;
+          translateY = e.clientY - startY;
+          
+          // Begrenze Panning
+          const maxPanX = lightboxImage.offsetWidth * 0.75;
+          const maxPanY = lightboxImage.offsetHeight * 0.75;
+          
+          translateX = Math.max(-maxPanX, Math.min(maxPanX, translateX));
+          translateY = Math.max(-maxPanY, Math.min(maxPanY, translateY));
+          
+          lightboxImage.style.transform = `scale(2.5) translate(${translateX}px, ${translateY}px)`;
+        }
+      });
+      
+      document.addEventListener('mouseup', function() {
+        if (isDragging) {
+          isDragging = false;
+          lightboxImage.style.cursor = 'grab';
+        }
+      });
+      
+      // Touch-Support für Mobile
+      lightboxImage.addEventListener('touchstart', function(e) {
+        if (isZoomed && e.touches.length === 1) {
+          e.preventDefault();
+          isDragging = true;
+          startX = e.touches[0].clientX - translateX;
+          startY = e.touches[0].clientY - translateY;
+        }
+      });
+      
+      lightboxImage.addEventListener('touchmove', function(e) {
+        if (isDragging && isZoomed && e.touches.length === 1) {
+          e.preventDefault();
+          translateX = e.touches[0].clientX - startX;
+          translateY = e.touches[0].clientY - startY;
+          
+          // Begrenze Panning
+          const maxPanX = lightboxImage.offsetWidth * 0.75;
+          const maxPanY = lightboxImage.offsetHeight * 0.75;
+          
+          translateX = Math.max(-maxPanX, Math.min(maxPanX, translateX));
+          translateY = Math.max(-maxPanY, Math.min(maxPanY, translateY));
+          
+          lightboxImage.style.transform = `scale(2.5) translate(${translateX}px, ${translateY}px)`;
+        }
+      });
+      
+      lightboxImage.addEventListener('touchend', function() {
+        isDragging = false;
+      });
+      
+      // Zoom zurücksetzen beim Bildwechsel
+      function resetZoom() {
+        lightboxImage.classList.remove('zoomed');
+        isZoomed = false;
+        isDragging = false;
+        translateX = 0;
+        translateY = 0;
+        lightboxImage.style.transform = '';
+        lightboxImage.style.transformOrigin = 'center';
+        lightboxImage.style.cursor = 'crosshair';
+      }
+      
+      // Touch-Swipe für mobile Geräte - erweitert
+      let touchStartX = 0;
+      let touchStartY = 0;
+      let touchEndX = 0;
+      let touchEndY = 0;
+      
+      lightboxModal.addEventListener('touchstart', function(e) {
+        touchStartX = e.changedTouches[0].screenX;
+        touchStartY = e.changedTouches[0].screenY;
+      });
+      
+      lightboxModal.addEventListener('touchend', function(e) {
+        touchEndX = e.changedTouches[0].screenX;
+        touchEndY = e.changedTouches[0].screenY;
+        handleSwipe();
+      });
+      
+      function handleSwipe() {
+        const swipeThreshold = 50;
+        const diffX = touchStartX - touchEndX;
+        const diffY = touchStartY - touchEndY;
+        
+        // Nur horizontal swipen wenn Bewegung hauptsächlich horizontal ist
+        if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > swipeThreshold) {
+          if (diffX > 0) {
+            // Swipe nach links - nächstes Bild
+            nextImage();
+            resetZoom(); // Zoom zurücksetzen beim Bildwechsel
+          } else {
+            // Swipe nach rechts - vorheriges Bild
+            prevImage();
+            resetZoom(); // Zoom zurücksetzen beim Bildwechsel
+          }
+        }
+      }
+      
+
+      
+      // Initialisierung
+      initializeGallery();
+      addGalleryEventListeners();
+    });
+  </script>
+
+  <!-- Pricing Modal Mausrad-Scroll für Desktop -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const modalContainer = document.querySelector('.modal-container');
+      
+      // Mausrad-Scroll nur auf Desktop aktivieren
+      if (window.innerWidth > 768) {
+        modalContainer.addEventListener('wheel', function(e) {
+          e.preventDefault();
+          
+          const scrollAmount = e.deltaY;
+          const currentScrollTop = this.scrollTop;
+          const maxScrollTop = this.scrollHeight - this.clientHeight;
+          
+          // Smooth Scroll mit Mausrad
+          const newScrollTop = Math.max(0, Math.min(maxScrollTop, currentScrollTop + scrollAmount));
+          
+          this.scrollTo({
+            top: newScrollTop,
+            behavior: 'smooth'
+          });
+        }, { passive: false });
+      }
+    });
+  </script>
+
+  <!-- Pricing Modal JavaScript -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const modal = document.getElementById('pricingModal');
+      const closeModal = document.getElementById('closeModal');
+      const cancelModal = document.getElementById('cancelModal');
+      const pricingForm = document.getElementById('pricingForm');
+      
+      // Modal-Elemente
+      const modalTitle = document.getElementById('modalTitle');
+      const modalIcon = document.getElementById('modalIcon');
+      const modalPackageName = document.getElementById('modalPackageName');
+      const modalPrice = document.getElementById('modalPrice');
+      
+      // Pricing-Buttons Event Listener
+      document.querySelectorAll('.pricing-btn').forEach(button => {
+        button.addEventListener('click', function(e) {
+          e.preventDefault();
+          
+          // Finde das zugehörige Pricing-Card
+          const pricingCard = this.closest('.pricing-card');
+          const packageName = pricingCard.querySelector('h3').textContent;
+          const price = pricingCard.querySelector('.amount').textContent;
+          const icon = pricingCard.querySelector('.pricing-icon i').className;
+          
+          // Fülle Modal-Daten
+          modalTitle.textContent = `Preisanfrage - ${packageName}`;
+          modalIcon.className = icon;
+          modalPackageName.textContent = packageName;
+          modalPrice.textContent = price;
+          
+          // Öffne Modal
+          openModal();
+        });
+      });
+      
+      // Modal öffnen
+      function openModal() {
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+        
+        // Zusätzlich: Scroll-Position der Hauptseite speichern und fixieren
+        const scrollY = window.scrollY;
+        document.body.style.position = 'fixed';
+        document.body.style.top = `-${scrollY}px`;
+        document.body.style.width = '100%';
+        
+        // Fokus auf erstes Input-Feld
+        setTimeout(() => {
+          document.getElementById('modalName').focus();
+        }, 300);
+      }
+      
+      // Modal schließen
+      function closeModalFunc() {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+        
+        // Scroll-Position der Hauptseite wiederherstellen
+        const scrollY = document.body.style.top;
+        document.body.style.position = '';
+        document.body.style.top = '';
+        document.body.style.width = '';
+        window.scrollTo(0, parseInt(scrollY || '0') * -1);
+        
+        // Form zurücksetzen
+        pricingForm.reset();
+      }
+      
+      // Event Listener für Schließen
+      closeModal.addEventListener('click', closeModalFunc);
+      cancelModal.addEventListener('click', closeModalFunc);
+      
+      // Modal schließen bei Klick auf Overlay
+      modal.addEventListener('click', function(e) {
+        if (e.target === modal || e.target.classList.contains('modal-overlay')) {
+          closeModalFunc();
+        }
+      });
+      
+      // ESC-Taste zum Schließen
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && modal.classList.contains('active')) {
+          closeModalFunc();
+        }
+      });
+      
+      // Form Submit
+      pricingForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Hier würde normalerweise die Form-Daten gesendet werden
+        const formData = new FormData(this);
+        const data = Object.fromEntries(formData);
+        
+        // Simuliere erfolgreiche Übermittlung
+        const submitBtn = this.querySelector('.btn-primary');
+        const originalText = submitBtn.innerHTML;
+        
+        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Wird gesendet...';
+        submitBtn.disabled = true;
+        
+        setTimeout(() => {
+          // Erfolgsmeldung anzeigen
+          const modalContent = modal.querySelector('.modal-content');
+          modalContent.innerHTML = `
+            <div class="success-message" style="text-align: center; padding: 3rem 2rem;">
+              <div style="width: 80px; height: 80px; background: #28a745; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 2rem; font-size: 2rem; color: white;">
+                <i class="fas fa-check"></i>
+              </div>
+              <h3 style="color: #28a745; margin-bottom: 1rem;">Anfrage erfolgreich gesendet!</h3>
+              <p style="color: #666; margin-bottom: 2rem;">Vielen Dank für Ihre Anfrage. Wir werden uns innerhalb von 24 Stunden bei Ihnen melden.</p>
+              <button class="btn-primary" onclick="closeModalFunc()">
+                <span>Schließen</span>
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+          `;
+        }, 2000);
+      });
+      
+      // Input-Animationen
+      const inputs = modal.querySelectorAll('input, select, textarea');
+      inputs.forEach(input => {
+        input.addEventListener('focus', function() {
+          this.parentElement.style.transform = 'scale(1.02)';
+        });
+        
+        input.addEventListener('blur', function() {
+          this.parentElement.style.transform = 'scale(1)';
+        });
       });
     });
   </script>
