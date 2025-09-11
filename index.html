@@ -780,62 +780,27 @@
   <!-- Lenis Smooth Scroll -->
   <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.18/bundled/lenis.min.js"></script>
   <script>
-    // Lenis initialisieren - optimiert für Desktop und Mobile
+    // Lenis initialisieren - optimiert für Mobile
     const isMobile = window.innerWidth <= 768;
     
     const lenis = new Lenis({
       smooth: true,
-      lerp: isMobile ? 0.12 : 0.05, // Deutlich flüssigerer Lerp auf Desktop
-      duration: isMobile ? 0.8 : 1.8, // Längere, sanftere Animation auf Desktop
-      easing: (t) => {
-        // Verbesserte Easing-Funktion für natürlicheres Scrollen
-        if (isMobile) {
-          return Math.min(1, 1.001 - Math.pow(2, -10 * t));
-        } else {
-          // Cubic-bezier für Desktop - ähnlich wie CSS ease-out
-          return 1 - Math.pow(1 - t, 3);
-        }
-      },
+      lerp: isMobile ? 0.12 : 0.08, // Schnellerer Lerp auf Mobile
+      duration: isMobile ? 0.8 : 1.2, // Kürzere Dauer auf Mobile
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Optimierte Easing-Funktion
       orientation: 'vertical',
       gestureOrientation: 'vertical',
-      smoothWheel: true, // Smooth wheel für alle Geräte aktivieren
-      wheelMultiplier: isMobile ? 0.8 : 1.2, // Erhöhte Sensitivität auf Desktop
-      touchMultiplier: isMobile ? 2 : 1.5, // Angepasste Touch-Sensitivität
-      infinite: false,
-      normalizeWheel: true, // Normalisiert Wheel-Events für konsistente Performance
-      syncTouch: true // Synchronisiert Touch-Events für bessere Performance
+      smoothWheel: !isMobile, // Deaktiviere smooth wheel auf Mobile
+      wheelMultiplier: isMobile ? 0.8 : 1, // Reduzierte Wheel-Sensitivität auf Mobile
+      touchMultiplier: 2, // Touch-Sensitivität für Mobile
+      infinite: false
     });
-    
-    // Verbesserte RAF-Loop für bessere Performance
-    let isRunning = true;
     
     function raf(time) {
-      if (isRunning) {
-        lenis.raf(time);
-        requestAnimationFrame(raf);
-      }
+      lenis.raf(time);
+      requestAnimationFrame(raf);
     }
     requestAnimationFrame(raf);
-    
-    // Performance-Optimierung: Pause Lenis wenn Tab nicht aktiv
-    document.addEventListener('visibilitychange', () => {
-      if (document.hidden) {
-        isRunning = false;
-      } else {
-        isRunning = true;
-        requestAnimationFrame(raf);
-      }
-    });
-    
-    // Dynamische Anpassung bei Resize
-    window.addEventListener('resize', () => {
-      const newIsMobile = window.innerWidth <= 768;
-      if (newIsMobile !== isMobile) {
-        // Reinitialisierung bei Gerätewechsel
-        lenis.destroy();
-        location.reload(); // Einfache Lösung für Gerätewechsel
-      }
-    });
 
     // Parallax für das Video - optimiert für Mobile
     const video = document.querySelector('.hero-video');
@@ -847,7 +812,7 @@
     });
     }
 
-    // Lenis Smooth Scroll für Anker-Links - optimiert für Desktop und Mobile
+    // Lenis Smooth Scroll für Anker-Links - optimiert für Mobile
     document.querySelectorAll('.nav-links a').forEach(link => {
       link.addEventListener('click', function(e) {
         const href = this.getAttribute('href');
@@ -856,17 +821,9 @@
           const target = document.querySelector(href);
           if (target) {
             const scrollOptions = {
-              offset: isMobile ? -80 : -20, // Angepasster Offset für Desktop
-              duration: isMobile ? 0.8 : 2.0, // Längere, sanftere Animation auf Desktop
-              easing: (t) => {
-                // Verbesserte Easing-Funktion für Anker-Scroll
-                if (isMobile) {
-                  return Math.min(1, 1.001 - Math.pow(2, -10 * t));
-                } else {
-                  // Sanftere Cubic-bezier für Desktop
-                  return 1 - Math.pow(1 - t, 4);
-                }
-              }
+              offset: isMobile ? -80 : 0, // Offset für Mobile-Navbar
+              duration: isMobile ? 0.8 : 1.2, // Kürzere Dauer auf Mobile
+              easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)) // Optimierte Easing
             };
             lenis.scrollTo(target, scrollOptions);
           }
@@ -874,7 +831,7 @@
       });
     });
 
-    // CTA Button Smooth Scroll - optimiert für Desktop und Mobile
+    // CTA Button Smooth Scroll - optimiert für Mobile
     const ctaButton = document.querySelector('.cta-btn');
     if (ctaButton) {
       ctaButton.addEventListener('click', function(e) {
@@ -882,17 +839,9 @@
         const target = document.querySelector('#kontakt');
         if (target) {
           const scrollOptions = {
-            offset: isMobile ? -80 : -20, // Angepasster Offset für Desktop
-            duration: isMobile ? 0.8 : 2.2, // Längere, sanftere Animation auf Desktop
-            easing: (t) => {
-              // Verbesserte Easing-Funktion für CTA-Scroll
-              if (isMobile) {
-                return Math.min(1, 1.001 - Math.pow(2, -10 * t));
-              } else {
-                // Sanftere Cubic-bezier für Desktop
-                return 1 - Math.pow(1 - t, 4);
-              }
-            }
+            offset: isMobile ? -80 : 0, // Offset für Mobile-Navbar
+            duration: isMobile ? 0.8 : 1.2, // Kürzere Dauer auf Mobile
+            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)) // Optimierte Easing
           };
           lenis.scrollTo(target, scrollOptions);
         }
