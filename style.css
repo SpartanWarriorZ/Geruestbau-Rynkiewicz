@@ -2737,9 +2737,61 @@ h2,
   }
 }
 
-/* Smooth Scrolling für bessere UX */
+/* Optimiertes Smooth Scrolling für bessere UX */
 html {
   scroll-behavior: smooth;
+  /* Verbesserte Scroll-Performance */
+  scroll-padding-top: 20px; /* Verhindert Überlappung mit Fixed-Header */
+}
+
+/* Desktop-spezifische Scroll-Optimierungen */
+@media (min-width: 769px) {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 20px;
+  }
+  
+  /* Hardware-Beschleunigung für bessere Performance */
+  body {
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    will-change: scroll-position;
+    /* Desktop-spezifische Scroll-Optimierungen */
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  
+  /* Optimierte Scroll-Performance für Desktop */
+  * {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  /* Verbesserte Scrollbar für Desktop */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--rot);
+    border-radius: 4px;
+    transition: background 0.3s ease;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b71c1c;
+  }
+  
+  /* Firefox Scrollbar */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--rot) #f1f1f1;
+  }
 }
 
 /* Verbesserte Focus-States für Accessibility */
@@ -3654,11 +3706,15 @@ html {
 @media (max-width: 768px) {
   html {
     scroll-behavior: auto; /* Deaktiviere native smooth-scroll auf Mobile */
+    scroll-padding-top: 80px; /* Mehr Abstand für Mobile-Navbar */
   }
   
   body {
     -webkit-overflow-scrolling: touch; /* Bessere Touch-Scroll-Performance */
     overflow-scrolling: touch;
+    /* Mobile-spezifische Optimierungen */
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
   }
   
   /* Reduziere Animationen auf Mobile für bessere Performance */
