@@ -777,42 +777,42 @@
       offset: 80
     });
   </script>
-  <!-- Lenis Smooth Scroll -->
+  <!-- Lenis Smooth Scroll - optimiert für schnelles, responsives Scrollen -->
   <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.18/bundled/lenis.min.js"></script>
   <script>
-    // Lenis initialisieren - optimiert für Mobile
+    // Lenis initialisieren mit schnellen, responsiven Einstellungen
     const isMobile = window.innerWidth <= 768;
     
     const lenis = new Lenis({
       smooth: true,
-      lerp: isMobile ? 0.12 : 0.08, // Schnellerer Lerp auf Mobile
-      duration: isMobile ? 0.8 : 1.2, // Kürzere Dauer auf Mobile
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Optimierte Easing-Funktion
+      lerp: 0.1, // Schnellerer Wert für weniger Verzögerung (vorher 0.08-0.12)
+      duration: 1.0, // Kürzere Dauer für schnelleres Scrollen
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
       orientation: 'vertical',
       gestureOrientation: 'vertical',
-      smoothWheel: !isMobile, // Deaktiviere smooth wheel auf Mobile
-      wheelMultiplier: isMobile ? 0.8 : 1, // Reduzierte Wheel-Sensitivität auf Mobile
-      touchMultiplier: 2, // Touch-Sensitivität für Mobile
+      smoothWheel: true,
+      wheelMultiplier: 1.0, // Normale Wheel-Sensitivität
+      touchMultiplier: 2.0,
       infinite: false
     });
     
+    // RAF-Loop für Lenis
     function raf(time) {
       lenis.raf(time);
       requestAnimationFrame(raf);
     }
     requestAnimationFrame(raf);
 
-    // Parallax für das Video - optimiert für Mobile
+    // Parallax für das Video - optimiert mit Lenis Scroll
     const video = document.querySelector('.hero-video');
-    if (video && !isMobile) { // Nur auf Desktop aktivieren
-    window.addEventListener('scroll', () => {
-      const scrollY = window.scrollY || window.pageYOffset;
-      // Parallax: Video bewegt sich mit 40% der Scrollgeschwindigkeit
-      video.style.transform = `translateY(${scrollY * 0.4}px)`;
-    });
+    if (video && !isMobile) {
+      lenis.on('scroll', ({ scroll, limit, velocity, direction, progress }) => {
+        // Parallax: Video bewegt sich mit 40% der Scrollgeschwindigkeit
+        video.style.transform = `translateY(${scroll * 0.4}px)`;
+      });
     }
 
-    // Lenis Smooth Scroll für Anker-Links - optimiert für Mobile
+    // Lenis Smooth Scroll für Anker-Links
     document.querySelectorAll('.nav-links a').forEach(link => {
       link.addEventListener('click', function(e) {
         const href = this.getAttribute('href');
@@ -820,30 +820,26 @@
           e.preventDefault();
           const target = document.querySelector(href);
           if (target) {
-            const scrollOptions = {
-              offset: isMobile ? -80 : 0, // Offset für Mobile-Navbar
-              duration: isMobile ? 0.8 : 1.2, // Kürzere Dauer auf Mobile
-              easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)) // Optimierte Easing
-            };
-            lenis.scrollTo(target, scrollOptions);
+            lenis.scrollTo(target, {
+              offset: isMobile ? -80 : 0,
+              duration: 1.0 // Schnellere Scroll-Dauer
+            });
           }
         }
       });
     });
 
-    // CTA Button Smooth Scroll - optimiert für Mobile
+    // CTA Button Smooth Scroll
     const ctaButton = document.querySelector('.cta-btn');
     if (ctaButton) {
       ctaButton.addEventListener('click', function(e) {
         e.preventDefault();
         const target = document.querySelector('#kontakt');
         if (target) {
-          const scrollOptions = {
-            offset: isMobile ? -80 : 0, // Offset für Mobile-Navbar
-            duration: isMobile ? 0.8 : 1.2, // Kürzere Dauer auf Mobile
-            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)) // Optimierte Easing
-          };
-          lenis.scrollTo(target, scrollOptions);
+          lenis.scrollTo(target, {
+            offset: isMobile ? -80 : 0,
+            duration: 1.0 // Schnellere Scroll-Dauer
+          });
         }
       });
     }

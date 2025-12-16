@@ -449,7 +449,6 @@ footer {
   z-index: 0;
   pointer-events: none;
   will-change: transform;
-  transition: transform 0.1s linear;
 }
 
 header .overlay {
@@ -2737,9 +2736,30 @@ h2,
   }
 }
 
-/* Smooth Scrolling für bessere UX */
+/* Lenis Smooth Scroll wird verwendet */
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
+}
+
+/* Optimierung für Lenis */
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
 }
 
 /* Verbesserte Focus-States für Accessibility */
