@@ -2762,6 +2762,12 @@ html.lenis {
   pointer-events: none;
 }
 
+/* Modal Container - normales Scrollen ohne Lenis */
+.modal-container[data-lenis-prevent] {
+  scroll-behavior: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
 /* Verbesserte Focus-States für Accessibility */
 .feature-card:focus-within,
 .info-card:focus-within {

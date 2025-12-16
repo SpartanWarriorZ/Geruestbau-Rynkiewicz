@@ -664,7 +664,7 @@
   <!-- Modal für Preisanfragen -->
   <div id="pricingModal" class="pricing-modal">
     <div class="modal-overlay"></div>
-    <div class="modal-container">
+    <div class="modal-container" data-lenis-prevent>
       <div class="modal-header">
         <h3 id="modalTitle">Preisanfrage</h3>
         <button class="modal-close" id="closeModal">
@@ -1691,30 +1691,10 @@
     });
   </script>
 
-  <!-- Pricing Modal Mausrad-Scroll für Desktop -->
+  <!-- Pricing Modal - normales Scrollen ohne Smooth Scroll -->
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const modalContainer = document.querySelector('.modal-container');
-      
-      // Mausrad-Scroll nur auf Desktop aktivieren
-      if (window.innerWidth > 768) {
-        modalContainer.addEventListener('wheel', function(e) {
-          e.preventDefault();
-          
-          const scrollAmount = e.deltaY;
-          const currentScrollTop = this.scrollTop;
-          const maxScrollTop = this.scrollHeight - this.clientHeight;
-          
-          // Smooth Scroll mit Mausrad
-          const newScrollTop = Math.max(0, Math.min(maxScrollTop, currentScrollTop + scrollAmount));
-          
-          this.scrollTo({
-            top: newScrollTop,
-            behavior: 'smooth'
-          });
-        }, { passive: false });
-      }
-    });
+    // Kein spezieller Wheel-Listener nötig - Browser handhabt normales Scrollen
+    // Lenis wird automatisch für Modals deaktiviert via data-lenis-prevent
   </script>
 
   <!-- Pricing Modal JavaScript -->
